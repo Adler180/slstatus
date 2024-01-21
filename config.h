@@ -68,7 +68,7 @@ static const struct arg args[] = {
     	{ netspeed_rx, "%sB/s  ", "enp0s25" },
 	//{ run_command, ": %4s | ", "amixer sgetic | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
 	{ run_command, ": %4s ", "wpctl get-volume @DEFAULT_AUDIO_SINK@ | cut -c 9-" },
-	{ run_command, "M: %s ", "cmus-remote -Q | grep 'tag title' | cut -c 11-" },
+	{ run_command, ": %s ", "cmus-remote -Q | grep 'tag title' | cut -c 11-" },
 	{ cpu_perc, "[CPU  %s%%]   ", NULL	      },
 	{ ram_perc, "[RAM  %s%%]   ", NULL	      },
 	{ datetime, "%s",           "%a %b %d %r" },
