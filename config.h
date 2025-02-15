@@ -69,7 +69,7 @@ static const struct arg args[] = {
 	//{ run_command, ": %4s | ", "amixer sgetic | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
 	{ run_command, "[ %4s] ", "wpctl get-volume @DEFAULT_AUDIO_SINK@ | cut -c 9-" },
 	// { run_command, ": %s ", "cmus-remote -Q | grep 'tag title' | cut -c 11-" },
-	{ cpu_perc, "[  %s%%] ", NULL	      },
-	{ ram_perc, "[  %s%%] ", NULL	      },
+	{ cpu_perc, "[ %s%%] ", NULL	      },
+	{ ram_perc, "[ %s%%] ", NULL	      },
 	{ datetime, "%s",           "%a %b %d %r" },
 };
